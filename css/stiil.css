@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Slabo+27px&display=swap');
+
+:root {
+    --headings: #747474;
+    --text:  #14A76C;
+    --backround: #272727;
+    --Headings-Font-family: 'Anton', sans-serif;
+    --Text-Font-family: 'Slabo 27px', serif;
+}
+
+h2{
+    background-color: var(--headings);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text);
+}
+
+body {
+    background-color: var(--backround);
+    text-align: center;
+    font-family: var(--Headings-Font-family);
+    font-size: 2,5rem;
+    padding-bottom: 1rem;
+    
+}
+
+p{
+    line-height: 2;
+}
+
+
+
+.middle-container{
+    margin: 5rem 0;
+}
+
+.image-cropper{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-img{
+    margin: 0 auto;
+    margin-left: -40%;
+    height: 100%;
+    width: auto;
+}
+
+.skill-row{
+    text-align: left;
+    margin: 2rem auto;
+    width: 50%;
+    
+    overflow: hidden;
+}
+
+.code-img{
+    width: 25%;
+    float: left;
+    margin-right: 5rem;
+    border-radius: 15%; 
+}
+
+hr{
+    border: dotted var(--text) 15px;
+    border-bottom: none;
+    margin: 5rem auto;
+    width: 15%;
+    
+}
+
+.hobby-img{
+    width: 25%;
+    float: right;
+    border-radius: 15%;
+}
+
+.btn {
+    display: block;
+    width: 16rem;
+    margin: 0 auto;
+    font-family: var(--Text-Font-family) ;
+    text-decoration: none;
+    background-color: var(--headings);
+    color: var(--text);
+    padding: 1rem;
+}
+.bottom-link{
+    list-style: none;
+    display: inline-block;
+    margin: 1rem;
+}   
+
+.bottom-link a{
+    text-decoration: none;
+    display: block;
+    color: var(--text);
+}
+
+.li-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    padding: 5px;
+}
