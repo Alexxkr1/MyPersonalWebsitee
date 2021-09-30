@@ -6,10 +6,24 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/ae2e135223.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/stiil.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="scortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <div class="top-container">
+        <div class="container">
+            <img src="imgs/mountain.png" alt="" width="804" >
+            <div class="box">
+                <img src="imgs/png.png" alt="" width="100%">
+            </div>
+            <div class="box2">
+                <img src="imgs/png.png" alt="" width="100%">
+            </div>
+            <div class="box3">
+                <img src="imgs/png.png" alt="" width="100%">
+            </div>
+        </div>  
+    </div>
     <div class="middle-container">
         <div class="profile">
             <div class="image-cropper">
@@ -81,6 +95,19 @@
         
     </div>
 
-        
+    <script>
+        var clouds = document.getElementsByClassName("box3");
+        document.onmousemove = function(){
+          var x = event.clientX * 100 / window.innerWidth + "%";
+          var y = event.clientY * 100 / window.innerHeight + "%";
+
+      
+          for(var i=0;i<2;i++){
+            clouds[i].style.left = x;
+            clouds[i].style.top = y;
+            clouds[i].style.transform = "translate(-"+x+",-"+y+")";
+          }
+        }
+      </script>
 </body>
 </html>
